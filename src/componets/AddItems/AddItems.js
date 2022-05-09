@@ -26,7 +26,7 @@ const AddItems = () => {
     };
 
     // send data to the server
-    fetch("https://thawing-dawn-14943.herokuapp.com/inventories", {
+    fetch("https://secret-coast-30912.herokuapp.com/product", {
       method: "POST",
       headers: {
         "content-type": "application/json",
