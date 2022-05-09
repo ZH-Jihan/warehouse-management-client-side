@@ -21,7 +21,7 @@ const Inventory = (props) => {
         src={inventory.img}
         alt=""
       />
-      <h6 className="common-color mt-2 text-start">{inventory.name}</h6>
+      <h5 className=" mt-2 text-start">{inventory.name}</h5>
       <div className="inventory-details text-start">
         <p>{inventory.description}</p>
         <p>Supplier: <strong>{inventory.supplier}</strong></p>
