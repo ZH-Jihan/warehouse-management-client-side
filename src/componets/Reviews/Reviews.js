@@ -4,7 +4,7 @@ import { Carousel } from "react-bootstrap";
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://thawing-dawn-14943.herokuapp.com/reviews")
+    fetch("https://secret-coast-30912.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
