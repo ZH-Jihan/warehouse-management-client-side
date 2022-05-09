@@ -22,7 +22,7 @@ const InventoryDetails = () => {
       quantity,
     };
     // send data to the server
-    const url = `https://thawing-dawn-14943.herokuapp.com/inventory/${id}`;
+    const url = `https://secret-coast-30912.herokuapp.com/product/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {

@@ -14,12 +14,12 @@ const MyItems = () => {
   const [inventories, setInventories] = useInventories();
   const navigate = useNavigate();
   const navigateToInventoryDetaills = (id) => {
-    navigate(`/inventory/${id}`);
+    navigate(`/product/${id}`);
   };
   useEffect(() => {
     const getItems = async () => {
       const email = user.email;
-      const url = `https://thawing-dawn-14943.herokuapp.com/items?email=${email}`;
+      const url = `https://secret-coast-30912.herokuapp.com/items?email=${email}`;
       const { data } = await axios.get(url, {
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -32,7 +32,7 @@ const MyItems = () => {
   const deleteHandle = (id) => {
     const proceed = window.confirm("Are you sure to delete?");
     if (proceed) {
-      const url = `https://thawing-dawn-14943.herokuapp.com/inventory/${id}`;
+      const url = `https://secret-coast-30912.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })

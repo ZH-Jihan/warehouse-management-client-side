@@ -1,4 +1,4 @@
-import { faEdit, faTrash, faUserEdit } from "@fortawesome/free-solid-svg-icons";
+import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Table } from "react-bootstrap";
@@ -6,7 +6,6 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import useInventories from "../hooks/useInventories";
 // import { useAuthState } from "react-firebase-hooks/auth";
 // import auth from "../firebase.init";
-
 import "./ManageInventory.css";
 const ManageInventory = () => {
   // const [user] = useAuthState(auth);
@@ -14,14 +13,14 @@ const ManageInventory = () => {
   const id = useParams();
   const navigate = useNavigate();
   const navigateToInventoryDetaills = (id) => {
-    navigate(`/inventory/${id}`);
+    navigate(`/product/${id}`);
   };
   const [inventories, setInventories] = useInventories();
   //delete inventory
   const deleteHandle = (id) => {
     const proceed = window.confirm("Are you sure to delete?");
     if (proceed) {
-      const url = `https://thawing-dawn-14943.herokuapp.com/inventory/${id}`;
+      const url = `https://secret-coast-30912.herokuapp.com/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })
