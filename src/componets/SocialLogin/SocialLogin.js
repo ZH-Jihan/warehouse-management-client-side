@@ -1,11 +1,18 @@
+import { useEffect } from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
-import Loading from "../SocialLogin/SocialLogin";
 import auth from "../../firebase.init";
+import Loading from "../SocialLogin/SocialLogin";
 
 const SocialLogin = () => {
   const location = useLocation();
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+
+  useEffect(() => {
+    if (user?.user?.accessToken) {
+      localStorage.setItem("accessToken", user?.user?.accessToken);
+    }
+  }, [user]);
 
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || "/";
