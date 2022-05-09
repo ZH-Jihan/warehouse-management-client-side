@@ -8,6 +8,7 @@ const InventoryDetails = () => {
   const [updateQuantity, setUpdateQuantity] = useState(null);
 
   //handleUpdateItems button
+  
   const handleUpdateItems = (type, event) => {
     if (inventory.quantity === 0 && !type) {
       return alert("Item already sold out");
