@@ -17,7 +17,7 @@ const Inventory = (props) => {
     >
       <img
         className="p-1 pt-3"
-        style={{ width: "250px", height: "180px" }}
+        style={{ width: "275px", height: "185px" }}
         src={inventory.img}
         alt=""
       />
@@ -30,7 +30,7 @@ const Inventory = (props) => {
       </div>
       <button
         onClick={() => navigateToInventoryDetaills(inventory._id)}
-        className="btn mt-3 mb-3 rounded-pill "
+        className="btn mt-3 mb-3 rounded-pill text-center"
       >
         Update <FontAwesomeIcon icon={faEdit}></FontAwesomeIcon>
       </button>
