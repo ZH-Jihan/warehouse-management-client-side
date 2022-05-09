@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Office Table OFS0021",
+    "img": "https://image.made-in-china.com/2f0j00FbHpnlkGruqA/High-End-L-Shape-Executive-Office-Table-Wooden-Boss-Office-Desk.jpg",
+    "description": "This is Office Table",
+    "supplier": "FurnitureBari.com",
+    "price": "$ 800 ",
+    "quantity": "25"
+  },
+  {
+    "id": 2,
+    "name": "Luxury Designer Bedroom Set",
+    "img": "https://royalzig.com/wp-content/uploads/2020/06/Luxury-bedroom.jpg",
+    "description": "This is Luxury Set",
+    "supplier": "FurnitureBari.com",
+    "price": "$ 4022 ",
+    "quantity": "5"
+  },
+  {
+    "id": 3,
+    "name": "Digital Multifuncition Bed",
+    "img": "https://www.furniturebari.com/image/cache/catalog/Bed/Luxury/4-202x224.jpg",
+    "description": "This is a Bed",
+    "supplier": "FurnitureBari.com",
+    "price": "$ 747 ",
+    "quantity": "8"
+  },
+  {
+    "id": 4,
+    "name": "European Sofa H956",
+    "img": "https://www.kindpng.com/picc/m/4-43192_modern-sofa-images-png-transparent-png.png",
+    "description": "This is a Sofa",
+    "supplier": "FurnitureBari.com",
+    "price": "$ 250 ",
+    "quantity": "17"
+  },
+  {
+    "id": 5,
+    "name": "Space Saving Table",
+    "img": "https://stylebyemilyhenderson.com/wp-content/uploads/2019/07/creekwood-hill-1-121-CROP.jpg",
+    "description": "This is a Table",
+    "supplier": "FurnitureBari.com",
+    "price": "$ 750 ",
+    "quantity": "13"
+  },
+  {
+    "id": 6,
+    "name": "Plywood Almirha",
+    "img": "https://image.made-in-china.com/44f3j00NmwHFTIPkcqz/Modern-Bedroom-Plywood-Wardrobe-Furniture-Set-Designs-Wooden-Wall-Almirah-Cabinet-Clothes-Wardrobes.jpg",
+    "description": "This is a Almirha",
+    "supplier": "Mr Manoj Kumar",
+    "price": "$ 530 ",
+    "quantity": "31"
+  }
+]
