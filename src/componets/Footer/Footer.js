@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Footer.css";
 const Footer = () => {
@@ -10,7 +9,7 @@ const Footer = () => {
       <p>
         <small>
           Copyrights &copy; {year} All rights reserved by{" "}
-          <b className="common-color">EIMS</b>{" "}
+          <b className="common-color">FarnitureBari</b>{" "}
         </small>
       </p>
     </footer>

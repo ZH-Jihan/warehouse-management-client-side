@@ -6,9 +6,9 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
-
 import CustomLink from "../CustomLink/CustomLink";
 import "./Header.css";
+
 const Header = () => {
   const [user] = useAuthState(auth);
   const handleSignOut = () => {
@@ -19,7 +19,7 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <span className="common-color company-logo">EIMS</span>
+            <span className="common-color company-logo">FarnitureBari</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

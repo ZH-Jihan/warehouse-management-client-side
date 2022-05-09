@@ -4,7 +4,7 @@ import WhyUsDetails from "../WhyUsDetails/WhyUsDetails";
 const WhyUs = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("https://thawing-dawn-14943.herokuapp.com/services")
+    fetch("https://secret-coast-30912.herokuapp.com/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -14,7 +14,7 @@ const WhyUs = () => {
       <div className="container">
         <div className="row g-2 mt-3">
           {services.map((service) => (
-            <WhyUsDetails key={service.id} service={service}></WhyUsDetails>
+            <WhyUsDetails key={service._id} service={service}></WhyUsDetails>
           ))}
         </div>
       </div>

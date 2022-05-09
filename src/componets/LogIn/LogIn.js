@@ -87,7 +87,7 @@ const LogIn = () => {
       {errorElement}
       <Link
         to="/register"
-        className="common-color pe-auto text-decoration-none link-danger"
+        className="common-color pe-auto text-decoration-none text-danger"
       >
         I don't have an account
       </Link>{" "}

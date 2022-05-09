@@ -10,8 +10,8 @@ const Banner = () => {
         <div className="col-12 col-sm-12 col-md-6 col-lg-6 ">
           <h2 className="common-color">
             {" "}
-            Easy Inventory <br />
-            Management System
+            Inventory <br />
+            Management
           </h2>
           <p>
             We are providing you the easiest way to manage your inventories with
