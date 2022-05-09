@@ -1,17 +1,17 @@
+import axios from "axios";
 import React, { useRef } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   useSendPasswordResetEmail,
-  useSignInWithEmailAndPassword,
+  useSignInWithEmailAndPassword
 } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
-
-import "./LogIn.css";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import auth from "../../firebase.init";
 import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
-import axios from "axios";
+import "./LogIn.css";
+
 const LogIn = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -38,7 +38,7 @@ const LogIn = () => {
     const password = passwordRef.current.value;
     await signInWithEmailAndPassword(email, password);
     const { data } = await axios.post(
-      "https://thawing-dawn-14943.herokuapp.com/login",
+      "https://secret-coast-30912.herokuapp.com//login",
       { email }
     );
     localStorage.setItem("accessToken", data.accessToken);
@@ -87,7 +87,7 @@ const LogIn = () => {
       {errorElement}
       <Link
         to="/register"
-        className="common-color pe-auto text-decoration-none"
+        className="common-color pe-auto text-decoration-none link-danger"
       >
         I don't have an account
       </Link>{" "}
